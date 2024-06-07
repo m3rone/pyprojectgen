@@ -4,7 +4,7 @@ A pyproject.toml generator webapp for Python projects written in Svelte and Tail
 
 It is not finished yet, as currently it can not do every (popular) field.
 
-![screenshot of the pyprojectgen ui](assets/image.png)
+![screenshot of the pyprojectgen ui](assets/readmescreenshot.png)
 
 ## Building
 

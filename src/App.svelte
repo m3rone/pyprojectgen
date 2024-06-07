@@ -2,9 +2,7 @@
 import BuildSystem from "./lib/BuildSystem.svelte";
 import Project from "./lib/Project.svelte";
 
-import { buildsystemstore } from "./store";
-import { genericstore } from "./store";
-
+import { buildsystemstore, genericstore } from "./store";
 
 $: buildsystemstring = $buildsystemstore
 $: genericstring = $genericstore
