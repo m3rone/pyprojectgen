@@ -5,7 +5,9 @@ A pyproject.toml generator webapp for Python projects written in Svelte and Tail
 It is not finished yet, as currently it can not do every (popular) field.
 
 ![screenshot of the pyprojectgen ui](assets/readmescreenshot.png)
+
 (may not be entirely up to date: see supported fields)
+
 ## Building
 
 Clone the repo, `pnpm i` (npm also works), and then `pnpm build` (`npm run build`) and it will build everything to `./dist`. After that, if you wish to use it as a one off occurance without deploying, run `pnpm preview` (`npm run preview`)
