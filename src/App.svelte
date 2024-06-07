@@ -2,10 +2,11 @@
 import BuildSystem from "./lib/BuildSystem.svelte";
 import Project from "./lib/Project.svelte";
 
-import { buildsystemstore, genericstore } from "./store";
+import { buildsystemstore, genericstore, authorstore } from "./store";
 
 $: buildsystemstring = $buildsystemstore
 $: genericstring = $genericstore
+$: authorstring = $authorstore
 
 let readonlyarea = true
 </script>
@@ -17,12 +18,11 @@ let readonlyarea = true
 
 <textarea readonly={readonlyarea} class="rounded-sm bg-slate-700 mt-4" cols="40" rows="10">
 {buildsystemstring}
-{genericstring}
+{genericstring}{authorstring}
 </textarea>
 
 <div class="block">
     <label for="readonlybox">readonly text area</label>
     <input bind:checked={readonlyarea} type="checkbox" id="readonlybox">
 </div>
-
 </main>
