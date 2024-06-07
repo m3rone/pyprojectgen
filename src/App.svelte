@@ -9,7 +9,7 @@ import { genericstore } from "./store";
 $: buildsystemstring = $buildsystemstore
 $: genericstring = $genericstore
 
-
+let readonlyarea = true
 </script>
 
 <main class="w-fit mx-auto mt-4">
@@ -17,8 +17,14 @@ $: genericstring = $genericstore
 <p>---</p>
 <Project />
 
-<textarea class="rounded-sm bg-slate-700 mt-4" cols="40" rows="10">
+<textarea readonly={readonlyarea} class="rounded-sm bg-slate-700 mt-4" cols="40" rows="10">
 {buildsystemstring}
 {genericstring}
 </textarea>
+
+<div class="block">
+    <label for="readonlybox">readonly text area</label>
+    <input bind:checked={readonlyarea} type="checkbox" id="readonlybox">
+</div>
+
 </main>
