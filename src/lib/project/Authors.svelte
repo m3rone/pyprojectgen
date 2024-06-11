@@ -1,7 +1,7 @@
 <script lang="ts">
 import { authorstore } from "../../store";
 let numofauthors = 1
-let [authorname, authoremail] = ["dsa", ""]
+let [authorname, authoremail] = ["", ""]
 
 $: authorstring = `
 authors=[{name = ${authorname}, email = ${authoremail}}]`

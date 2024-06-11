@@ -25,4 +25,5 @@ let readonlyarea = true
     <label for="readonlybox">readonly text area</label>
     <input bind:checked={readonlyarea} type="checkbox" id="readonlybox">
 </div>
+<a class="text-cyan-400 underline" href="https://github.com/m3rone/pyprojectgen">source code</a>
 </main>
