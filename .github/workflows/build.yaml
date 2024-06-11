@@ -24,7 +24,7 @@ jobs:
       - name: Build the app
         run: |
           pnpm i
-          pnpm build
+          pnpm build --base=/pyprojectgen/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
