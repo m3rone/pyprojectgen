@@ -1,5 +1,7 @@
 # Pyprojectgen
 
+[https://m3rone.github.io/pyprojectgen/](https://m3rone.github.io/pyprojectgen/)
+
 A pyproject.toml generator webapp for Python projects written in Svelte and Tailwind.
 
 It is not finished yet, as currently it can not do every (popular) field.
